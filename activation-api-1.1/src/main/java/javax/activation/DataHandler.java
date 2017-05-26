@@ -246,7 +246,7 @@ public class DataHandler implements Transferable {
                 dch = localFactory.createDataContentHandler(mimeType);
             }
             if (dch == null) {
-                dch = CommandMap.getDefaultCommandMap().createDataContentHandler(mimeType);
+                dch = getCommandMap().createDataContentHandler(mimeType);
             }
         }
         return dch;
