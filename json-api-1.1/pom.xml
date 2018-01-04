@@ -61,6 +61,7 @@
                         <Bundle-Activator>org.apache.servicemix.specs.locator.Activator</Bundle-Activator>
                         <Implementation-Title>Apache ServiceMix</Implementation-Title>
                         <Implementation-Version>${project.version}</Implementation-Version>
+                        <Provide-Capability>osgi.contract;osgi.contract=JavaJSONP;version:List&lt;Version&gt;="1,1.1";uses:="javax.json,javax.json.spi,javax.json.stream"</Provide-Capability>
                     </instructions>
                     <unpackBundle>true</unpackBundle>
                 </configuration>
