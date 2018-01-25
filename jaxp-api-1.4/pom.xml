@@ -23,26 +23,34 @@
 
     <parent>
         <groupId>org.apache.servicemix.specs</groupId>
-        <artifactId>specs</artifactId>
-        <version>2.10-SNAPSHOT</version>
+        <artifactId>specs-pom</artifactId>
+        <version>1-SNAPSHOT</version>
+        <relativePath>../specs-pom/pom.xml</relativePath>
     </parent>
 
     <groupId>org.apache.servicemix.specs</groupId>
     <artifactId>org.apache.servicemix.specs.jaxp-api-1.4</artifactId>
     <packaging>bundle</packaging>
-    <version>2.10-SNAPSHOT</version>
+    <version>1.4_1-SNAPSHOT</version>
     <name>Apache ServiceMix :: Specs :: JAXP API 1.4</name>
+
+    <scm>
+        <connection>scm:git:https://git-wip-us.apache.org/repos/asf/servicemix-specs.git</connection>
+        <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/servicemix-specs.git</developerConnection>
+        <url>https://git-wip-us.apache.org/repos/asf?p=servicemix-specs.git</url>
+        <tag>HEAD</tag>
+    </scm>
 
     <dependencies>
         <dependency>
             <groupId>org.apache.servicemix.specs</groupId>
             <artifactId>org.apache.servicemix.specs.locator</artifactId>
-            <version>${project.version}</version>
+            <version>2.10-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.apache.servicemix.specs</groupId>
             <artifactId>org.apache.servicemix.specs.stax-api-1.2</artifactId>
-            <version>${project.version}</version>
+            <version>1.2_1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>xml-apis</groupId>
