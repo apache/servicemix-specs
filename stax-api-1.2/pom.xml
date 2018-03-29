@@ -31,14 +31,14 @@
     <groupId>org.apache.servicemix.specs</groupId>
     <artifactId>org.apache.servicemix.specs.stax-api-1.2</artifactId>
     <packaging>bundle</packaging>
-    <version>1.2_1-SNAPSHOT</version>
+    <version>1.2_1</version>
     <name>Apache ServiceMix :: Specs :: Stax API 1.2</name>
 
     <scm>
         <connection>scm:git:https://git-wip-us.apache.org/repos/asf/servicemix-specs.git</connection>
         <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/servicemix-specs.git</developerConnection>
         <url>https://git-wip-us.apache.org/repos/asf?p=servicemix-specs.git</url>
-        <tag>HEAD</tag>
+        <tag>org.apache.servicemix.specs.stax-api-1.2-1.2_1</tag>
     </scm>
 
     <dependencies>
