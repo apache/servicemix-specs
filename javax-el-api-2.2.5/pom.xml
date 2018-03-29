@@ -135,11 +135,6 @@
                                 <configuration>
                                     <artifactItems>
                                         <artifactItem>
-                                            <groupId>javax.el</groupId>
-                                            <artifactId>javax.el:javax.el-api</artifactId>
-                                            <classifier>sources</classifier>
-                                        </artifactItem>
-                                        <artifactItem>
                                             <groupId>org.apache.servicemix.specs</groupId>
                                             <artifactId>org.apache.servicemix.specs.locator</artifactId>
                                             <classifier>sources</classifier>
