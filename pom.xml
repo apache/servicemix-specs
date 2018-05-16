@@ -36,49 +36,7 @@
     <!-- This pom is not supposed to be released, it's just the list of next specs modules we plan to include in next release cycle -->
 
     <modules>
-        <module>specs-pom</module>
-        <module>locator</module>
-        <module>activator</module>
-        <module>saaj-api-1.3</module>
-        <module>stax-api-1.0</module>
-        <module>stax-api-1.2</module>
-        <module>jain-sip-api-1.2</module>
-        <module>jain-sip-api-1.2.1</module>
-        <module>jaxb-api-2.0</module>
-        <module>jaxb-api-2.1</module>
-        <module>jaxb-api-2.2</module>
-        <module>jaxp-api-1.3</module>
-        <module>jaxp-api-1.4</module>
-        <module>jaxws-api-2.0</module>
-        <module>jaxws-api-2.1</module>
-        <module>jaxws-api-2.2</module>
-        <module>jbi-api-1.0</module>
-        <module>scripting-api-1.0</module>
-        <module>jsr250-1.0</module>
-        <module>jsr311-api-0.8</module>
-        <module>jsr311-api-1.0</module>
-        <module>jsr311-api-1.1</module>
-        <module>jsr311-api-1.1.1</module>
-        <module>jsr339-api-m10</module>
-        <module>jsr339-api-m13</module>
-        <module>jsr339-api-rc3</module>
-        <module>jsr339-api-2.0</module>
-        <module>jsr339-api-2.0.1</module>
-        <module>javamail-api-1.4</module>
-        <module>activation-api-1.1</module>
         <module>annotation-api-1.2</module>
-        <module>java-persistence-api-1.1.1</module>
-        <module>java-persistence-api-2.0</module>
-        <module>jsr303-api-1.0.0</module>
-        <module>jsr303-api-1.1.0</module>
-        <module>jcr-api-2.0</module>
-        <module>jsr370-api-m1</module>
-        <module>jsr370-api-m4</module>
-        <module>jsr370-api-m5</module>
-        <module>jaxrs-api-2.1</module>
-    	<module>json-api-1.1</module>
-        <module>javax-el-api-3.0.0</module>
-        <module>javax-el-api-2.2.5</module>
         <module>annotation-api-1.3</module>
     </modules>
 
