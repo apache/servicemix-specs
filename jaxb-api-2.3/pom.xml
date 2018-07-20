@@ -24,15 +24,15 @@
     <parent>
         <groupId>org.apache.servicemix.specs</groupId>
         <artifactId>specs-pom</artifactId>
-        <version>1</version>
+        <version>2-SNAPSHOT</version>
         <relativePath>../specs-pom/pom.xml</relativePath>
     </parent>
 
     <groupId>org.apache.servicemix.specs</groupId>
-    <artifactId>org.apache.servicemix.specs.jaxb-api-2.2</artifactId>
+    <artifactId>org.apache.servicemix.specs.jaxb-api-2.3</artifactId>
     <packaging>bundle</packaging>
-    <version>2.2_1-SNAPSHOT</version>
-    <name>Apache ServiceMix :: Specs :: JAXB API 2.2</name>
+    <version>2.3_1-SNAPSHOT</version>
+    <name>Apache ServiceMix :: Specs :: JAXB API 2.3</name>
 
     <scm>
         <connection>scm:git:https://git-wip-us.apache.org/repos/asf/servicemix-specs.git</connection>
@@ -45,12 +45,12 @@
         <dependency>
             <groupId>org.apache.servicemix.specs</groupId>
             <artifactId>org.apache.servicemix.specs.locator</artifactId>
-            <version>2.10-SNAPSHOT</version>
+            <version>2.9.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.servicemix.specs</groupId>
             <artifactId>org.apache.servicemix.specs.stax-api-1.0</artifactId>
-            <version>1.0_1-SNAPSHOT</version>
+            <version>2.9.0</version>
         </dependency>
         <dependency>
             <groupId>org.apache.geronimo.specs</groupId>
@@ -60,7 +60,7 @@
         <dependency>
             <groupId>javax.xml.bind</groupId>
             <artifactId>jaxb-api</artifactId>
-            <version>2.2.11</version>
+            <version>2.3.0</version>
         </dependency>
     </dependencies>
 
@@ -73,7 +73,7 @@
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Bundle-Description>${project.description}</Bundle-Description>
-                        <Export-Package>javax.xml.bind*;version=2.2.1;-split-package:=merge-first;-noimport:=true</Export-Package>
+                        <Export-Package>javax.xml.bind*;version=2.3;-split-package:=merge-first;-noimport:=true</Export-Package>
                         <Import-Package>*</Import-Package>
                         <Private-Package>org.apache.servicemix.specs.locator;-split-package:=merge-first</Private-Package>
                         <Bundle-Activator>org.apache.servicemix.specs.locator.Activator</Bundle-Activator>
