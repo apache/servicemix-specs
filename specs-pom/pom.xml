@@ -30,13 +30,13 @@
     <groupId>org.apache.servicemix.specs</groupId>
     <artifactId>specs-pom</artifactId>
     <packaging>pom</packaging>
-    <version>2-SNAPSHOT</version>
+    <version>3-SNAPSHOT</version>
     <name>Apache ServiceMix :: Specs :: POM</name>
 
     <scm>
-        <connection>scm:git:https://git-wip-us.apache.org/repos/asf/servicemix-specs.git</connection>
-        <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/servicemix-specs.git</developerConnection>
-        <url>https://git-wip-us.apache.org/repos/asf?p=servicemix-specs.git</url>
+        <connection>scm:git:https://gitbox.apache.org/repos/asf/servicemix-specs.git</connection>
+        <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/servicemix-specs.git</developerConnection>
+        <url>https://gitbox.apache.org/repos/asf?p=servicemix-specs.git</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -52,16 +52,6 @@
     <properties>
         <osgi.version>4.3.0</osgi.version>
     </properties>
-
-    <dependencies>
-        <!-- adding the OSGi JAR everywhere to ensure javadoc can get built -->
-        <dependency>
-            <groupId>org.osgi</groupId>
-            <artifactId>org.osgi.core</artifactId>
-            <version>${osgi.version}</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -90,9 +80,11 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-release-plugin</artifactId>
-                    <version>2.5.1</version>
+                    <version>2.5.3</version>
                     <configuration>
+                        <useReleaseProfile>false</useReleaseProfile>
                         <preparationGoals>clean install</preparationGoals>
+                        <goals>deploy</goals>
                         <arguments>-Prelease,deploy</arguments>
                         <autoVersionSubmodules>true</autoVersionSubmodules>
                     </configuration>
@@ -142,14 +134,6 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-eclipse-plugin</artifactId>
                     <version>2.9</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-javadoc-plugin</artifactId>
-                    <version>2.9.1</version>
-                    <configuration>
-                        <additionalparam>-Xdoclint:none</additionalparam>
-                    </configuration>
                 </plugin>
             </plugins>
         </pluginManagement>
@@ -220,36 +204,6 @@
             </plugin>
         </plugins>
     </build>
-
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.9.1</version>
-                <configuration>
-                    <additionalparam>-Xdoclint:none</additionalparam>
-                    <minmemory>128m</minmemory>
-                    <maxmemory>512m</maxmemory>
-                    <breakiterator>true</breakiterator>
-                    <quiet>true</quiet>
-                    <verbose>false</verbose>
-                    <source>1.5</source>
-                    <linksource>true</linksource>
-                    <links>
-                        <link>http://download.oracle.com/javase/1.5.0/docs/api/</link>
-                        <link>http://download.oracle.com/javaee/5/api/</link>
-                        <link>http://www.osgi.org/javadoc/r4/</link>
-                    </links>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jxr-plugin</artifactId>
-                <version>2.4</version>
-            </plugin>
-        </plugins>
-    </reporting>
 
     <profiles>
         <profile>
