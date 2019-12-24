@@ -85,14 +85,14 @@
                         <configuration>
                             <artifactSet>
                                 <includes>
-                                    <include>javax.xml.soap:javax.xml.soap-api</include>
+                                    <include>jakarta.xml.soap:jakarta.xml.soap-api</include>
                                     <include>org.apache.servicemix.specs:org.apache.servicemix.specs.locator</include>
                                     <include>${project.groupId}:${project.artifactId}</include>
                                 </includes>
                             </artifactSet>
                             <filters>
                                 <filter>
-                                    <artifact>javax.xml.soap:javax.xml.soap-api</artifact>
+                                    <artifact>jakarta.xml.soap:jakarta.xml.soap-api</artifact>
                                     <excludes>
                                         <exclude>javax/**</exclude>
                                     </excludes>
@@ -135,8 +135,8 @@
                                 <configuration>
                                     <artifactItems>
                                         <artifactItem>
-                                            <groupId>javax.xml.soap</groupId>
-                                            <artifactId>javax.xml.soap-api</artifactId>
+                                            <groupId>jakarta.xml.soap</groupId>
+                                            <artifactId>jakarta.xml.soap-api</artifactId>
                                             <classifier>sources</classifier>
                                         </artifactItem>
                                         <artifactItem>
@@ -150,7 +150,7 @@
                             </execution>
                         </executions>
                     </plugin>
-
+                    <!-- temp disabled
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-javadoc-plugin</artifactId>
@@ -169,6 +169,7 @@
                             <sourcepath>${project.build.directory}/sources</sourcepath>
                         </configuration>
                     </plugin>
+                    -->
                 </plugins>
             </build>
         </profile>
