@@ -42,6 +42,7 @@
         <module>jaxb-api-2.3</module> 
         <module>saaj-api-1.4</module>
         <module>activation-api-1.2.1</module>
+        <module>javax-el-api-3.0.2</module>
     </modules>
 
 </project>
