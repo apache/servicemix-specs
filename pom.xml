@@ -41,6 +41,7 @@
         <module>jaxws-api-2.3</module>
         <module>jaxb-api-2.3</module> 
         <module>saaj-api-1.4</module>
+        <module>activation-api-1.2.1</module>
     </modules>
 
 </project>
