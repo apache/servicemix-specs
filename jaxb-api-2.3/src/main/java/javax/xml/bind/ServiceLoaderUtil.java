@@ -109,6 +109,24 @@ class ServiceLoaderUtil {
             throw handler.createException(x, "Provider " + className + " could not be instantiated: " + x);
         }
     }
+    
+    static Object lookupUsingOSGiServiceLoader(String factoryId, Logger logger) {
+     // using OSGi locator to load the spi class
+        try {
+            Class serviceClass = Class.forName(factoryId);
+            Class spiClass = org.apache.servicemix.specs.locator.OsgiLocator.locate(serviceClass);
+            if (spiClass != null) {
+                logger.log(Level.FINE, "Found spiClass: " + spiClass);
+                return spiClass;
+            } else {
+                logger.log(Level.FINE, "No spiClass found in OSGi");
+                return null;
+            }
+
+        } catch (Throwable t) {
+            return null;
+        }
+    }
 
     static Class safeLoadClass(String className,
                                String defaultImplClassName,
