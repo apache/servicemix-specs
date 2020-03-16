@@ -43,6 +43,7 @@
         <module>saaj-api-1.4</module>
         <module>activation-api-1.2.1</module>
         <module>javax-el-api-3.0.2</module>
+        <module>jaxrs-api-2.1</module>
     </modules>
 
 </project>
