@@ -31,14 +31,15 @@
     <groupId>org.apache.servicemix.specs</groupId>
     <artifactId>org.apache.servicemix.specs.saaj-api-1.4</artifactId>
     <packaging>bundle</packaging>
-    <version>1.4_2-SNAPSHOT</version>
+    <version>1.4_2</version>
     <name>Apache ServiceMix :: Specs :: SAAJ API 1.4</name>
 
     <scm>
         <connection>scm:git:https://git-wip-us.apache.org/repos/asf/servicemix-specs.git</connection>
         <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/servicemix-specs.git</developerConnection>
         <url>https://git-wip-us.apache.org/repos/asf?p=servicemix-specs.git</url>
-    </scm>
+      <tag>org.apache.servicemix.specs.saaj-api-1.4-1.4_2</tag>
+  </scm>
 
     <dependencies>
         <dependency>
