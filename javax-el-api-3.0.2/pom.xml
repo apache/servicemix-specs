@@ -31,14 +31,15 @@
     <groupId>org.apache.servicemix.specs</groupId>
     <artifactId>org.apache.servicemix.specs.javax-el-api-3.0.2</artifactId>
     <packaging>bundle</packaging>
-    <version>3.0.2_2-SNAPSHOT</version>
+    <version>3.0.2_2</version>
     <name>Apache ServiceMix :: Specs :: JAVAX EL API 3.0.2</name>
 
     <scm>
         <connection>scm:git:https://gitbox.apache.org/repos/asf/servicemix-specs.git</connection>
         <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/servicemix-specs.git</developerConnection>
         <url>https://gitbox.apache.org/repos/asf?p=servicemix-specs.git</url>
-    </scm>
+      <tag>org.apache.servicemix.specs.javax-el-api-3.0.2-3.0.2_2</tag>
+  </scm>
 
     <dependencies>
         <dependency>
