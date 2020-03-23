@@ -24,7 +24,7 @@
     <parent>
         <groupId>org.apache.servicemix.specs</groupId>
         <artifactId>specs-pom</artifactId>
-        <version>2</version>
+        <version>1</version>
         <relativePath>../specs-pom/pom.xml</relativePath>
     </parent>
 
