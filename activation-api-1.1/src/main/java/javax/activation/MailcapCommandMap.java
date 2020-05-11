@@ -28,7 +28,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.URL;
-import java.security.Security;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Enumeration;
@@ -277,11 +276,21 @@ public class MailcapCommandMap extends CommandMap {
                     cmdList = new ArrayList();
                     allCommands.put(mimeType, cmdList);
                 }
-                cmdList.add(info);
+                addUnique(cmdList, info);
             }
         }
     }
 
+    private void addUnique(List commands, CommandInfo newCommand) {
+        for (Iterator i = commands.iterator(); i.hasNext();) {
+            CommandInfo info = (CommandInfo)i.next();
+            if (info.getCommandName().equals(newCommand.getCommandName())
+                    && info.getCommandClass().equals(newCommand.getCommandClass())) {
+                return;
+            }
+        }
+        commands.add(newCommand);
+    }
 
     /**
      * Add a command to a target command list (preferred or fallback).
