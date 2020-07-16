@@ -41,6 +41,10 @@ import java.util.Map;
  * @version $Rev$ $Date$
  */
 public class MailcapCommandMap extends CommandMap {
+    /**
+     * A string that holds all the special chars.
+     */
+    private static final String TSPECIALS = "()<>@,;:/[]?=\\\"";
     private final Map mimeTypes = new HashMap();
     private final Map preferredCommands = new HashMap();
     private final Map allCommands = new HashMap();
@@ -310,7 +314,7 @@ public class MailcapCommandMap extends CommandMap {
     }
 
     private int getToken(String s, int index) {
-        while (index < s.length() && s.charAt(index) != '#' && !MimeType.isSpecial(s.charAt(index))) {
+        while (index < s.length() && s.charAt(index) != '#' && !isSpecialCharacter(s.charAt(index))) {
             index++;
         }
         return index;
@@ -503,5 +507,9 @@ public class MailcapCommandMap extends CommandMap {
             return new String[0];
         }
         return (String[])commands.toArray(new String[commands.size()]);
+    }
+    
+    private boolean isSpecialCharacter(char c) {
+        return Character.isWhitespace(c) || Character.isISOControl(c) || TSPECIALS.indexOf(c) != -1;
     }
 }
