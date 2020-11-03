@@ -31,14 +31,14 @@
     <groupId>org.apache.servicemix.specs</groupId>
     <artifactId>org.apache.servicemix.specs.activation-api-1.2.1</artifactId>
     <packaging>bundle</packaging>
-    <version>1.2.1_3</version>
+    <version>1.2.1_4-SNAPSHOT</version>
     <name>Apache ServiceMix :: Specs :: Activation API 1.2.1</name>
 
     <scm>
         <connection>scm:git:https://gitbox.apache.org/repos/asf/servicemix-specs.git</connection>
         <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/servicemix-specs.git</developerConnection>
         <url>https://gitbox.apache.org/repos/asf?p=servicemix-specs.git</url>
-      <tag>org.apache.servicemix.specs.activation-api-1.2.1-1.2.1_3</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <dependencies>
