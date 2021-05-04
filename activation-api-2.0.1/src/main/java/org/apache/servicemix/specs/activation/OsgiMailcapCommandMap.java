@@ -21,9 +21,9 @@ package org.apache.servicemix.specs.activation;
 import java.util.Map;
 import java.util.HashMap;
 
-import javax.activation.MailcapCommandMap;
-import javax.activation.CommandInfo;
-import javax.activation.DataContentHandler;
+import jakarta.activation.MailcapCommandMap;
+import jakarta.activation.CommandInfo;
+import jakarta.activation.DataContentHandler;
 
 import org.osgi.framework.Bundle;
 
