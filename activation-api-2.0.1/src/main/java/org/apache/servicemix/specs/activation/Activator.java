@@ -28,8 +28,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import javax.activation.CommandMap;
-import javax.activation.DataContentHandler;
+import jakarta.activation.CommandMap;
+import jakarta.activation.DataContentHandler;
 
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleContext;
@@ -61,7 +61,7 @@ public class Activator extends org.apache.servicemix.specs.locator.Activator {
 
             try {
                 final Class<?> clazz = bundle
-                        .loadClass("javax.activation.DataContentHandler");
+                        .loadClass("jakarta.activation.DataContentHandler");
                 if (!clazz.isAssignableFrom(DataContentHandler.class)) {
                     debugPrintln("incompatible DataContentHandler class in bundle "
                             + bundle.getBundleId());
