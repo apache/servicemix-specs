@@ -99,6 +99,7 @@ public class Activator extends org.apache.servicemix.specs.locator.Activator {
                     commandMap.addMailcap(line, mailcap.bundle);
                 }
             }
+            commandMap.addMailcap("", null);
             CommandMap.setDefaultCommandMap(commandMap);
         } finally {
             Thread.currentThread().setContextClassLoader(tccl);
