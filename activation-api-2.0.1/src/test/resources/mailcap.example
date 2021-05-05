@@ -1,0 +1,2 @@
+# Example mailcap
+example/sm-4383;; x-java-content-handler=some.value
